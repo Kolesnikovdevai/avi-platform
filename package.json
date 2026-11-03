@@ -1,0 +1,20 @@
+{
+  "name": "avitopulse",
+  "private": true,
+  "packageManager": "pnpm@11.25.0",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @avitopulse/web dev",
+    "build": "pnpm --filter @avitopulse/web build",
+    "lint": "pnpm --filter @avitopulse/web lint",
+    "typecheck": "pnpm --filter @avitopulse/web typecheck",
+    "format:check": "prettier --check apps/web/src apps/web/tests apps/web/*.ts apps/web/*.mjs package.json pnpm-workspace.yaml",
+    "format": "prettier --write apps/web/src apps/web/tests apps/web/*.ts apps/web/*.mjs package.json pnpm-workspace.yaml",
+    "test:e2e": "pnpm --filter @avitopulse/web test:e2e"
+  },
+  "devDependencies": {
+    "prettier": "^3.9.10"
+  }
+}

@@ -1,0 +1,32 @@
+# Local secrets and environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python / frontend generated artifacts
+.venv/
+.tools/
+.local/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+node_modules/
+.next/
+apps/web/next-env.d.ts
+*.tsbuildinfo
+playwright-report/
+test-results/
+artifacts/
+
+# Local data must not enter version control
+*.log
+*.dump
+*.sql.gz
+.DS_Store
+Thumbs.db
