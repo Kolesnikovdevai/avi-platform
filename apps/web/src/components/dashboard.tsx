@@ -79,9 +79,9 @@ export function Dashboard() {
           <span className="brand-mark">
             <Activity size={23} strokeWidth={2.5} />
           </span>
-          <span>
+          <span className="brand-copy">
             Avito<span className="brand-light">Pulse</span>
-            <small>АНАЛИТИКА С ЯСНОСТЬЮ</small>
+            <small>Понятная аналитика</small>
           </span>
         </Link>
         <button className="mobile-close icon-button" aria-label="Закрыть меню" onClick={closeMenu}>
@@ -89,9 +89,9 @@ export function Dashboard() {
         </button>
         <div className="workspace">
           <span className="workspace-icon">Д</span>
-          <span>
+          <span className="workspace-copy">
             <strong>Демоорганизация</strong>
-            <small>Пример рабочего пространства</small>
+            <small>Демонстрационный кабинет</small>
           </span>
           <FlaskConical size={15} />
         </div>
@@ -340,7 +340,7 @@ export function Dashboard() {
                           />
                           <polyline
                             points={data.spendPoints}
-                            stroke="var(--coral)"
+                            stroke="var(--chart-coral)"
                             strokeWidth="3"
                             fill="none"
                             strokeLinejoin="round"
