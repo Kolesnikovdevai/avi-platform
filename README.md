@@ -105,7 +105,7 @@ uv run --frozen pip-audit --local --skip-editable
 
 Дополнительная Windows-проверка на переносимом PostgreSQL: `./scripts/check-postgres.ps1 -PgBin <путь-к-bin-PostgreSQL-18>`. Она создаёт отдельный временный кластер на `127.0.0.1:55433`, выполняет тот же bootstrap, дважды `upgrade head`, тесты и останавливает сервер. Бинарники должны быть заранее получены из [официального источника](https://www.postgresql.org/download/windows/); скрипт их не загружает и службу Windows не устанавливает. Для кириллического пути проекта используется временный ASCII junction. Тестовые данные остаются во временном каталоге; файл начального пароля удаляется.
 
-CI: `.github/workflows/ci.yml` проверяет web/backend, реальный PostgreSQL, секреты Gitleaks и уязвимости. Удалённый запуск требует GitHub-репозитория; текущий каталог ещё не инициализирован как git-репозиторий.
+CI: `.github/workflows/ci.yml` проверяет web/backend, реальный PostgreSQL, секреты Gitleaks и уязвимости. Проект подключён к [Kolesnikovdevai/avi-platform](https://github.com/Kolesnikovdevai/avi-platform), основная ветка — main. Изменения проходят через тематические ветки и pull requests по [Git-процессу](docs/GIT_WORKFLOW.md). Актуальная дизайн-система — светлая версия 2.0 с Inter; тёмная версия сохранена в истории.
 
 ## Планируемый стек и инструменты
 
